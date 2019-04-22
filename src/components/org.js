@@ -1,29 +1,25 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 const OrgContainer = styled.div`
-  display: grid;
-  grid-template-columns: 20% 10% 10% 10% 10% 10% 10% 20%;
-  margin-top: 50px;
+  max-width: 750px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 30px auto;
 `
+
 const OrgServices = styled.div`
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  & p {
-    font-size: 0.8em;
-    font-weight: 800;
-    margin-bottom: 7px;
-    width: 116%;
-    padding-left: 6px;
-    line-height: 20px;
-    text-align: center;
-    transform: translate(8px);
-    background-color: gainsboro;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    border: 1px solid #aaa;
-    border-radius: 3px;
-    z-index: 10;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ddd;
+  border: 1px solid #bbb;
+
+  border-radius: 3px;
+  &:nth-child(2) {
+    margin-left: 30px;
   }
 `
 const Kehi = styled.div`
@@ -39,56 +35,58 @@ const Kehi = styled.div`
 
 const OrgItem = styled.div`
   background-color: royalblue;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.3);
   margin: 5px;
-  padding: 20px 20px;
+  padding: 20px 40px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   text-align: center;
   justify-self: center;
   border-radius: 3px;
   color: white;
-
+  font-family: tahoma;
+  text-transform: uppercase;
   & span {
     font-size: 0.8em;
     font-weight: 800;
     align-self: ;
   }
 `
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`
 const Org = () => (
   <OrgContainer>
     <OrgServices>
-      <Kehi>
-        <h5>Kehittämispalvelut</h5>
-        <p>Palvelujen kehittäminen</p>
-        <p>Osaamisen johtaminen</p>
-        <p>Viestintä ja markkinointi</p>
-      </Kehi>
-      <Kehi>
-        <h5>Hallintopalvelut</h5>
-        <p>Hallinto</p>
-        <p>Henkilöstöhallinto</p>
-        <p>Talous</p>
-        <p>Tietohallinto</p>
-      </Kehi>
+      <OrgItem>
+        <span>
+          <StyledLink to="">Lasten-, nuorten ja perheiden palvelut</StyledLink>
+        </span>
+      </OrgItem>
+      <OrgItem>
+        <span>Aikuisten monialaiset palvelut</span>
+      </OrgItem>
+      <OrgItem>
+        <span>
+          <StyledLink to="/mielenterveys">
+            Mielenterveys- ja päihdepalvelut
+          </StyledLink>
+        </span>
+      </OrgItem>
     </OrgServices>
-    <OrgItem>
-      <span>Lasten-, nuorten ja perheiden palvelut</span>
-    </OrgItem>
-    <OrgItem>
-      <span>Aikuisten monialaiset palvelut</span>
-    </OrgItem>
-    <OrgItem>
-      <span>Mielenterveys- ja päihdepalvelut</span>
-    </OrgItem>
-    <OrgItem>
-      <span>Sairaalapalvelut</span>
-    </OrgItem>
-    <OrgItem>
-      <span>Vastaanotto- ja kuntoutuspalvelut</span>
-    </OrgItem>
-    <OrgItem>
-      <span>Koti-, asumis- ja hoivapalvelut</span>
-    </OrgItem>
+    <OrgServices>
+      <OrgItem>
+        <span>Sairaalapalvelut</span>
+      </OrgItem>
+      <OrgItem>
+        <span>Vastaanotto- ja kuntoutuspalvelut</span>
+      </OrgItem>
+      <OrgItem>
+        <span>Koti-, asumis- ja hoivapalvelut</span>
+      </OrgItem>
+    </OrgServices>
   </OrgContainer>
 )
 

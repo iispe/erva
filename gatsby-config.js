@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Kymsote Organisaatio`,
+    title: `Kymsote `,
     description: `Kymsote organisaatiokaavio`,
     author: `@vantaaleri`,
   },
