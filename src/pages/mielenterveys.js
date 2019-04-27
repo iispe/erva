@@ -1,23 +1,15 @@
-import React from "react"
-import { Spring } from "react-spring/renderprops"
-import styled from "styled-components"
-import Layout from "../components/layout"
+import React from 'react';
+import { Spring } from 'react-spring/renderprops';
+import styled from 'styled-components';
+import Layout from '../components/layout';
 
-const StyledH1 = styled.h1`
-  color: white;
-  background-color: royalblue;
-  padding: 15px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-`
 const SubHeader = styled.div`
   background-color: midnightblue;
   padding-bottom: 20px;
-`
+`;
 const SubpageContainer = styled.div`
   border-top: 5px solid steelblue;
-`
+`;
 
 const MainContent = styled.div`
   padding: 20px;
@@ -34,7 +26,7 @@ const MainContent = styled.div`
     border-bottom: 3px solid white;
     text-transform: uppercase;
   }
-`
+`;
 const Side = styled.div`
   margin: 0 auto;
   max-width: 90%;
@@ -46,7 +38,7 @@ const Side = styled.div`
 
   transform: translateY(-30px);
   margin-bottom: 60px;
-`
+`;
 const SideItem = styled.p`
   background-color: #008dae;
   place-items: stretch;
@@ -58,30 +50,21 @@ const SideItem = styled.p`
   text-transform: uppercase;
   font-weight: 800;
   padding: 1em;
-`
+`;
 
 const services = [
-  "Terveysasemien mielenterveys- ja päihdepalvelut",
-  "Akuuttipalvelut",
-  "Psykiatrinen osastohoito",
-  "Nuorisopsykiatrian poliklinikka ja osasto",
-  "Mielenterveys- ja päihdepoliklinikat",
-  "Mielenterveys- ja päihdekuntoutujien asumispalvelut",
-  "Selviämis- ja vieroitushoito",
-  "Korvaushoito ja sosiaali- ja terveysneuvonta",
-  "Yleissairaalapsykiatrian poliklinikka",
-]
+  'Terveysasemien mielenterveys- ja päihdepalvelut',
+  'Akuuttipalvelut',
+  'Psykiatrinen osastohoito',
+  'Nuorisopsykiatrian poliklinikka ja osasto',
+  'Mielenterveys- ja päihdepoliklinikat',
+  'Mielenterveys- ja päihdekuntoutujien asumispalvelut',
+  'Selviämis- ja vieroitushoito',
+  'Korvaushoito ja sosiaali- ja terveysneuvonta',
+  'Yleissairaalapsykiatrian poliklinikka',
+];
 const Mielenterveys = () => (
   <Layout>
-    {/* <Spring
-      from={{ opacity: 0 }}
-      to={{ opacity: 1 }}
-      config={{ tension: 30, friction: 10 }}
-    >
-      {styles => (
-        <StyledH1 style={styles}>Mielenterveys- ja päihdepalvelut</StyledH1>
-      )}
-    </Spring> */}
     <Spring
       from={{ opacity: 0 }}
       to={{ opacity: 1 }}
@@ -91,14 +74,16 @@ const Mielenterveys = () => (
         <SubpageContainer style={styles}>
           <SubHeader>
             <MainContent>
-              <h2>Mielenterveys- ja päihdepalvelut</h2>
+              <h2> Mielenterveys - ja päihdepalvelut </h2>
+
               <p>
                 Tarjoavat tutkimusta, hoitoa ja kuntoutusta psykiatrista
                 erikoissairaanhoitoa ja päihdehuoltoa tarvitseville
                 kymenlaaksolaisille. Mielenterveyspalvelut on suunnattu
                 erilaisissa psyykkisissä ongelmatilanteissa olevien ihmisten
-                tukemiseen.{" "}
+                tukemiseen.
               </p>
+
               <p>
                 Päihdepalveluiden tavoitteena on ennaltaehkäistä ja hoitaa
                 päihteiden ongelmakäytön haittoja.
@@ -106,14 +91,14 @@ const Mielenterveys = () => (
             </MainContent>
           </SubHeader>
           <Side>
-            {services.map(item => {
-              return <SideItem>{item}</SideItem>
-            })}
+            {services.map(item => (
+              <SideItem>{item}</SideItem>
+            ))}
           </Side>
         </SubpageContainer>
       )}
     </Spring>
   </Layout>
-)
+);
 
-export default Mielenterveys
+export default Mielenterveys;
