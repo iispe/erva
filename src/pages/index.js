@@ -1,13 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import Layout from '../components/layout';
-import High from '../components/high';
-import Org from '../components/org';
+import Layout from "../components/layout";
+import High from "../components/high";
+import Org from "../components/org";
+import Maku from "../components/maku";
 
 const Hero = styled.div`
-  background-color: midnightblue;
-  border-top: 5px solid steelblue;
+  background-image: linear-gradient(
+    to top,
+    #051937,
+    #0c1c42,
+    #181d4c,
+    #261e54,
+    #351d5c
+  );
+
   border-bottom: 12px solid lightgray;
   padding-bottom: 20px;
 `;
@@ -33,18 +41,20 @@ const IndexPage = () => (
     <Hero>
       <MainContent>
         <p>
-          Kymenlaakson sosiaali- ja terveyspalvelujen kuntayhtymä Kymsote
-          aloitti toimintansa 1.1.2019. Kymsoten tehtävänä on järjestää ja
+          Kymenlaakson sosiaali - ja terveyspalvelujen kuntayhtymä Kymsote
+          aloitti toimintansa 1.1 .2019. Kymsoten tehtävänä on järjestää ja
           tuottaa kaikille maakunnan asukkaille yhdenvertaiset ja helposti
-          saavutettavat sote-palvelut.
+          saavutettavat sote - palvelut.
         </p>
+
         <p>
           Kymsote tavoittelee toiminnassaan parasta asiakaskokemusta ja panostaa
           ennaltaehkäiseviin, laadukkaisiin ja kustannustehokkaisiin
-          palveluihin. Kymsote on tulevaisuuden toimija, jonka tavoite on, että
+          palveluihin.Kymsote on tulevaisuuden toimija, jonka tavoite on, että
           kymenlaaksolaiset ovat aktiivisia, hyvinvoivia ja toimintakykyisiä eri
           elämäntilanteissa.
         </p>
+
         <p>
           Kuntayhtymän jäsenkuntia ovat Hamina, Kotka, Kouvola, Miehikkälä,
           Pyhtää ja Virolahti. Kymsote työllistää yli 5 000 eri alojen
@@ -52,8 +62,10 @@ const IndexPage = () => (
         </p>
       </MainContent>
     </Hero>
+
     <High />
     <Org />
+    <Maku />
   </Layout>
 );
 

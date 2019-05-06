@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const OrgContainer = styled.div`
   max-width: 950px;
@@ -59,12 +59,17 @@ const Org = () => (
       <h4>OSALLISUUDEN PALVELUT</h4>
       <OrgItem>
         <span>
-          <StyledLink to="">Lasten- , nuorten ja perheiden palvelut</StyledLink>
+          <StyledLink to="/lnp">
+            Lasten, nuorten ja perheiden palvelut
+          </StyledLink>
         </span>
       </OrgItem>
       <OrgItem>
-        {' '}
-        <span> Aikuisten monialaiset palvelut </span>
+        <span>
+          <StyledLink to="/aikuistenmoniala">
+            Aikuisten monialaiset palvelut
+          </StyledLink>
+        </span>
       </OrgItem>
       <OrgItem>
         <span>
@@ -78,15 +83,23 @@ const Org = () => (
     <OrgServices>
       <h4>TERVEYDEN JA IKÄÄNTYMISEN PALVELUT</h4>
       <OrgItem>
-        <span> Sairaalapalvelut </span>
+        <span>
+          <StyledLink to="/sairaala"> Sairaalapalvelut </StyledLink>
+        </span>
       </OrgItem>
 
       <OrgItem>
-        <span> Vastaanotto- ja kuntoutuspalvelut </span>
+        <span>
+          <StyledLink to="/vastaanottojakuntoutus">
+            Vastaanotto- ja kuntoutuspalvelut
+          </StyledLink>
+        </span>
       </OrgItem>
 
       <OrgItem>
-        <span> Koti- , asumis- ja hoivapalvelut </span>
+        <span>
+          <StyledLink to="/tip">Koti- , asumis- ja hoivapalvelut</StyledLink>
+        </span>
       </OrgItem>
     </OrgServices>
   </OrgContainer>

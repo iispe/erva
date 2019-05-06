@@ -17,40 +17,37 @@ const Side = styled.div`
   grid-template-rows: repeat(auto, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 5px;
-  align-items: space-around;
-
   margin-bottom: 60px;
 `;
 
 const services = [
   {
-    id: 'Varhaisen tuen palvelut',
+    id: 'Aikuisten sosiaalipalvelut ja työ- ja päivätoiminta',
     items: [
-      'Liikkuvat palvelut, akuutti ja terveysasematyö',
-      'Päihdepoliklinikat ja yleissairaalapsykiatria',
-      'Mielenterveys- ja päihdepoliklinikat',
+      'Aikuissosiaalityö',
+      'Terveyssosiaalityö Sosiaali- ja kriisipäivystys',
+      'Maahanmuutopalvelut',
+      'Vammaispalvelut',
+      'Työ- ja päivätoiminta',
+      'Tulkkauspalvelut',
     ],
   },
   {
-    id: 'Tehostetut palvelut',
-    items: [
-      'Akuuttiosastot',
-      'Kuntoutus- ja geropsykiatria',
-      'Nuorisopsykiatria',
-      'Erityisasiantuntijat ja varahenkilöstö',
-    ],
+    id: 'Työelämäpalvelut',
+    items: ['Työelämäpalvelut'],
   },
 ];
+
 // const services = [
-//   'Liikkuvat palvelut, akuutti ja terveysasematyö',
-//   'Päihdepoliklinikat ja yleissairaalapsykiatria',
-//   'Mielenterveys- ja päihdepoliklinikat',
-//   'Akuuttiosastot',
-//   'Kuntoutus- ja geropsykiatria',
-//   'Nuorisopsykiatria',
-//   'Erityisasiantuntijat ja varahenkilöstö',
+//   'Aikuissosiaalityö',
+//   'Terveyssosiaalityö Sosiaali- ja kriisipäivystys',
+//   'Maahanmuutopalvelut',
+//   'Vammaispalvelut',
+//   'Työ- ja päivätoiminta',
+//   'Tulkkauspalvelut',
+//   'Työelämäpalvelut',
 // ];
-const Mielenterveys = () => (
+const Aikuistenmoniala = () => (
   <Layout>
     <SubpageContainer>
       <Spring
@@ -61,24 +58,21 @@ const Mielenterveys = () => (
         {styles => (
           <SubHeader style={styles}>
             <MainContent>
-              <h2> Mielenterveys - ja päihdepalvelut </h2>
-
+              <h2> Aikuisten sosiaalipalvelut ja työelämäpalvelut </h2>
               <p>
-                Tarjoavat tutkimusta, hoitoa ja kuntoutusta psykiatrista
-                erikoissairaanhoitoa ja päihdehuoltoa tarvitseville
-                kymenlaaksolaisille.Mielenterveyspalvelut on suunnattu
-                erilaisissa psyykkisissä ongelmatilanteissa olevien ihmisten
-                tukemiseen.
-              </p>
-
-              <p>
-                Päihdepalveluiden tavoitteena on ennaltaehkäistä ja hoitaa
-                päihteiden ongelmakäytön haittoja.
+                Aikuisille suunnattujen sosiaali- ja työelämäpalveluiden
+                tehtävänä on edistää ja ylläpitää asukkaiden ja yhteisöjen
+                hyvinvointia ja terveyttä sekä sosiaalista turvallisuutta ja
+                toimintakykyä. Tähän pyritään järjestämällä ja tuottamalla
+                tarpeen mukaisia ja vaikuttavia palveluja, vahvistamalla
+                osallisuutta ja kehittämällä sosiaalisia oloja sekä takaamalla
+                asukkaille riittävä toimeentuloturva.
               </p>
             </MainContent>
           </SubHeader>
         )}
       </Spring>
+
       <Spring
         from={{ opacity: 0, transform: 'translate3d(100%,-30px,0)' }}
         to={{ opacity: 1, transform: 'translate3d(0%,-30px,0)' }}
@@ -102,4 +96,4 @@ const Mielenterveys = () => (
   </Layout>
 );
 
-export default Mielenterveys;
+export default Aikuistenmoniala;
