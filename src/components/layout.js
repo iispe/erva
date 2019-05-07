@@ -43,8 +43,7 @@ const Layout = ({ children }) => (
               paddingLeft: "5em",
             }}
           >
-            © {new Date().getFullYear()}, Tehyn HUS Erva-alueen
-            neuvottelupäivät.
+            © {new Date().getFullYear()}, Tehyn HUS Erva-alueen neuvottelupäivät
           </footer>
         </div>
       </>

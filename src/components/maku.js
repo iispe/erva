@@ -50,9 +50,7 @@ function Maku() {
           Jäljellä oleva työ suunnataan valmistelun päättämiseen, tehdyn työn
           dokumentointiin ja uudistuksen hallittuun alasajoon kesäkuun 2019
           loppuun mennessä. Poikkeuksena ICT-valmistelu, joka päättyy joulukuun
-          2019 loppuun mennessä. Kymenlaakson maakunta- ja sote -uudistuksen
-          valmistelijat haluavat kiittää kaikkia yhdessä tehdystä työstä
-          maakunnan hyväksi.
+          2019 loppuun mennessä.
         </p>
         <p>
           Valiaikainentoimielin (VATE) jatkaa kokoontumistaan kesäkuulle asti,
