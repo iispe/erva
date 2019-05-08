@@ -53,12 +53,7 @@ function Maku() {
           2019 loppuun mennessä.
         </p>
         <p>
-          Valiaikainentoimielin (VATE) jatkaa kokoontumistaan kesäkuulle asti,
-          väliaikainen yhteistoimintaelin (VYTE) tapaa säännöllisesti.
-        </p>
-        <p>
-          Henkilöstöryhmä ei ole kokoontunut Kymsoten työryhmien kanssa
-          samanaikaisesti.
+          Valiaikainen toimielin (VATE) jatkaa kokoontumistaan kesäkuulle asti.
         </p>
       </MakuMain>
     </Container>
