@@ -54,16 +54,7 @@ const Tip = () => (
         {styles => (
           <SubHeader style={styles}>
             <MainContent>
-              <h2> Aikuisten sosiaalipalvelut ja työelämäpalvelut </h2>
-              <p>
-                Aikuisille suunnattujen sosiaali- ja työelämäpalveluiden
-                tehtävänä on edistää ja ylläpitää asukkaiden ja yhteisöjen
-                hyvinvointia ja terveyttä sekä sosiaalista turvallisuutta ja
-                toimintakykyä. Tähän pyritään järjestämällä ja tuottamalla
-                tarpeen mukaisia ja vaikuttavia palveluja, vahvistamalla
-                osallisuutta ja kehittämällä sosiaalisia oloja sekä takaamalla
-                asukkaille riittävä toimeentuloturva.
-              </p>
+              <h2> Koti-, asumis- ja hoivapalvelut </h2>
             </MainContent>
           </SubHeader>
         )}
